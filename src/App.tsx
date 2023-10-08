@@ -1,8 +1,7 @@
 import { ToastContainer } from 'react-toastify'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css'
-import { Home } from './screens'
-import { Login } from './screens/login';
+import { Home, Login } from './screens'
 
 function App() {
 
