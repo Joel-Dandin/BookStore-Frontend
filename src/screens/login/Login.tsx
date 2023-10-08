@@ -1,4 +1,3 @@
-import React from 'react'
 import {
   MainContainer,
   MainContainerRight,
@@ -48,7 +47,7 @@ export const Login = () => {
               <MainContainerLeftSubText href="#" >Forgot password?</MainContainerLeftSubText>
             </OptionBox>
 
-            <PrimaryButtom>Sign In</PrimaryButtom>
+            <PrimaryButtom onClick={() => window.open('/Dashboard', '_self')}>Sign In</PrimaryButtom>
           </MainContainerLeftCardData>
         </MainContainerLeftCard>
       </MainContainerLeft>
