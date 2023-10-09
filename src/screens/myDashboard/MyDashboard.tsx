@@ -5,21 +5,20 @@ import {
     Heading,
     DashboardData,
     BookList
-} from './dashboard.styled'
+} from './myDashboard.styled'
 
-export const Dashboard = () => {
+export const MyDashboard = () => {
     return (
         <MainContainer>
             <Navbar />
             <DashboardData>
-                <Heading>The Top Picks</Heading>
+                <Heading>Owned Books</Heading>
                 <BookList>
                     <Book />
                     <Book />
                     <Book />
                     <Book />
-                    <Book />
-                    <Book />
+
                 </BookList>
             </DashboardData>
         </MainContainer>

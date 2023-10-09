@@ -14,11 +14,11 @@ import {
     ProfileImageDListItem
 } from "./navbar.styled"
 
-const Navbar = () => {
+export const Navbar = () => {
     return (
         <MainNavbar>
             <LogoLinkDiv>
-                <LogoLink>Book Store</LogoLink>
+                <LogoLink href="/Dashboard">Book Store</LogoLink>
             </LogoLinkDiv>
             <DataLinks>
                 <CartButton>
@@ -38,12 +38,11 @@ const Navbar = () => {
                     </ProfileImageDiv>
                     <ProfileImageDList tabIndex={0}>
                         <ProfileImageDListItem><a href="/">Profile</a></ProfileImageDListItem>
-                        <ProfileImageDListItem><a href="/">Logout</a></ProfileImageDListItem>
+                        <ProfileImageDListItem><a href="/MyDashboard">My Dashboard</a></ProfileImageDListItem>
+                        <ProfileImageDListItem><a href="/Login">Logout</a></ProfileImageDListItem>
                     </ProfileImageDList>
                 </ProfileDiv>
             </DataLinks>
         </MainNavbar>
     )
 }
-
-export default Navbar

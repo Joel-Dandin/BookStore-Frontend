@@ -1,4 +1,3 @@
-import React from 'react'
 import {
   MainCardContainer, BookImage,
   BookDataDiv,
@@ -9,24 +8,9 @@ import {
   BookDataLabel
 } from './book.styled'
 
-const Book = () => {
+export const Book = () => {
   return (
-    // <MainCardContainer>
-    //     <BookImage>
-    //         <img src="https://media.npr.org/assets/img/2023/05/02/water_custom-3c24e76a8ab773623dd89fcb25a7e8cc66765c6d.jpg" alt="Book" />
-    //     </BookImage>
-    //     <BookDataDiv>
-    //         <BookDataTitle>
-    //             Shoes!
-    //             <BookDataTitleLabel>NEW</BookDataTitleLabel>
-    //         </BookDataTitle>
-    //         <BookData>If a dog chews shoes whose shoes does he choose?</BookData>
-    //         <BookDataLabelArray>
-    //             <BookDataLabel>Fashion</BookDataLabel>
-    //             <BookDataLabel>Products</BookDataLabel>
-    //         </BookDataLabelArray>
-    //     </BookDataDiv>
-    // </MainCardContainer>
+
     <MainCardContainer>
       <BookImage>
         <img src="https://media.npr.org/assets/img/2023/05/02/water_custom-3c24e76a8ab773623dd89fcb25a7e8cc66765c6d.jpg" alt="Water" />
@@ -50,5 +34,3 @@ const Book = () => {
     </MainCardContainer>
   )
 }
-
-export default Book

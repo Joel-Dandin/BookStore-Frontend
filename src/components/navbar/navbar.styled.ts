@@ -6,7 +6,7 @@ navbar bg-base-100
 const LogoLinkDiv = tw.div`
 flex-1
 `;
-const LogoLink = tw.div`
+const LogoLink = tw.a`
 btn btn-ghost normal-case text-xl
 `;
 const DataLinks = tw.div`
