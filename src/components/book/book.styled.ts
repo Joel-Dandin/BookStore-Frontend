@@ -1,20 +1,20 @@
 import tw from "tw-tailwind";
 
 const MainCardContainer = tw.div`
-card w-64 bg-base-100 shadow-xl
+card w-64 bg-base-100 shadow-xl group rounded-2xl
 `;
 
 const BookImage = tw.figure`
-aspect-[3/4]
+relative rounded-2xl
 `;
 const BookDataDiv = tw.div`
-card-body
+h-[60%] bottom-0 card-body absolute hidden group-hover:flex flex-col bg-base-200 opacity-90 rounded-2xl
 `;
 const BookDataTitle = tw.h2`
-card-title
+card-title flex justify-between
 `;
 const BookDataTitleLabel = tw.div`
-badge badge-secondary
+badge badge-secondary justify-self-end
 `;
 const BookData = tw.p`
 `;
