@@ -1,6 +1,6 @@
 import tw from "tw-tailwind";
 
-const MainCardContainer = tw.div`
+const MainCardContainer = tw.a`
 card w-64 bg-base-100 shadow-xl group rounded-2xl
 `;
 

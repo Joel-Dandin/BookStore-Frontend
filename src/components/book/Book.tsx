@@ -8,27 +8,26 @@ import {
   BookDataLabel
 } from './book.styled'
 
-export const Book = () => {
+export const Book = ({imageurl,bookName,bookId,bookData,bookLabel}:{imageurl:string,bookName:string,bookId:string,bookData:string,bookLabel:string}) => {
   return (
 
-    <MainCardContainer>
+    <MainCardContainer href='/BookInfo'>
       <BookImage>
-        <img src="https://media.npr.org/assets/img/2023/05/02/water_custom-3c24e76a8ab773623dd89fcb25a7e8cc66765c6d.jpg" alt="Water" />
+        <img src={imageurl} alt="Water" />
       </BookImage>
 
       <BookDataDiv>
         <BookDataTitle>
-          Water
+        {bookName}
           <BookDataTitleLabel>
-            NEW
+          {bookId}
           </BookDataTitleLabel>
         </BookDataTitle>
 
-        <BookData>If a dog chews shoes whose shoes does he choose?</BookData>
+        <BookData>{bookData}</BookData>
 
         <BookDataLabelArray>
-          <BookDataLabel>Fashion</BookDataLabel>
-          <BookDataLabel>Products</BookDataLabel>
+          <BookDataLabel>{bookLabel}</BookDataLabel>
         </BookDataLabelArray>
       </BookDataDiv>
     </MainCardContainer>
